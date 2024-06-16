@@ -122,7 +122,8 @@ header.headerCSS {
 
 .kontak,
 .paket,
-.alasan {
+.alasan,
+.lokasi {
   display: flex;
   justify-content: space-around;
   align-items: center;
@@ -219,6 +220,15 @@ header.headerCSS {
   flex-wrap: wrap;
   padding: 20px;
   height: 50vh;
+}
+
+.icon-rumah {
+  width: 5rem;
+  height: 5rem;
+}
+
+.judul-lokasi {
+  padding: 1rem 0;
 }
 
 #tentang,

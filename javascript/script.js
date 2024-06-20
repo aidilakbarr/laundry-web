@@ -18,3 +18,28 @@ document.addEventListener("click", function (e) {
     overlay.classList.remove("active");
   }
 });
+
+function validateForm() {
+  var name = document.getElementById('name').value;
+  var email = document.getElementById('emailAddress').value;
+  var message = document.getElementById('message').value;
+
+  if (name.trim() === '') {
+      return false; // Mencegah form untuk dikirimkan
+  }
+
+  console.log(name);
+
+  // Validasi email menggunakan regular expression
+  var emailRegex = /^\S+@\S+\.\S+$/;
+  if (!emailRegex.test(email) && email.trim() === '') {
+      alert('Invalid email address');
+      return false; // Mencegah form untuk dikirimkan
+  }
+
+  if (message.trim() === '') {
+    return false; // Mencegah form untuk dikirimkan
+}
+  // Jika validasi berhasil, form akan dikirimkan
+  return true;
+}

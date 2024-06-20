@@ -5,13 +5,13 @@
   text-decoration: none;
   border: none;
   list-style: none;
+font-family: "Poppins", sans-serif;
 }
 
 html {
-  font-family: "Poppins", sans-serif;
   scroll-behavior: smooth;
-}
-
+  }
+  
 .heroCSS {
   min-height: 100vh;
   display: flex;
@@ -236,7 +236,14 @@ header.headerCSS {
 #layanan,
 #kontak {
   padding-top: 6.5rem;
+  margin-bottom: 30px;
 }
+
+  
+.row {
+  margin: 20px 0px;
+}
+
 
 @media (max-width: 1366px) {
   html {
@@ -293,6 +300,8 @@ header.headerCSS {
   }
 }
 
+
+
 /* Mobile Phone */
 @media (max-width: 450px) {
   html {
@@ -306,6 +315,8 @@ header.headerCSS {
   }
 
   .kontak,
+
+
   .paket,
   .alasan {
     flex-direction: column;
@@ -315,4 +326,5 @@ header.headerCSS {
     width: 100%;
     margin: 10px 0;
   }
+
 }
